@@ -1,0 +1,173 @@
+/* IA generó la configuración de variables globales en :root y estilos base */
+:root {
+    --color-primario: #0056b3;
+    --color-secundario: #f8f9fa;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --color-borde: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+    line-height: 1.6;
+}
+
+/* HEADER & NAVIGATION (FLEXBOX OBLIGATORIO) */
+header {
+    background-color: var(--color-secundario);
+    border-bottom: 1px solid var(--color-borde);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex; /* Requisito obligatorio */
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9ecef;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* SERVICIOS SECTION (GRID OBLIGATORIO) */
+#servicios {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-servicios {
+    display: grid; /* Requisito obligatorio */
+    grid-template-columns: repeat(3, 1fr); /* Requisito obligatorio */
+    gap: 20px;
+}
+
+.tarjeta-servicio {
+    border: 1px solid var(--color-borde);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+}
+
+.tarjeta-servicio h3 {
+    margin-bottom: 10px;
+    color: var(--color-primario);
+}
+
+/* NOSOTROS SECTION */
+.seccion-texto {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.seccion-texto h2 {
+    margin-bottom: 15px;
+}
+
+/* CONTACTO SECTION */
+.seccion-contacto {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-secundario);
+    border-top: 1px solid var(--color-borde);
+    margin-top: 40px;
+}
