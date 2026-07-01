@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiciUrbana - Tu cicletería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- IA generó la estructura semántica de esta barra de navegación y el header -->
+    <header>
+        <div class="header-container">
+            <h1>BiciUrbana</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN INICIO (HERO) -->
+        <section id="inicio" class="hero">
+            <h2>Tu bicicleta, nuestra pasión. Rueda con nosotros.</h2>
+            <p>Venta · Taller · Arriendo · Asesoría personalizada</p>
+            <a href="#contacto" class="btn-cta">Agendar revisión</a>
+        </section>
+
+        <!-- SECCIÓN SERVICIOS (GRID) -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="grid-servicios">
+                <article class="tarjeta-servicio">
+                    <h3>Taller de reparación</h3>
+                    <p>Diagnóstico y mantención express para que tu bici ruede de forma segura.</p>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Venta de bicicletas</h3>
+                    <p>Urbanas, MTB y eléctricas. Encontraras el modelo ideal para tus rutas.</p>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <h3>Arriendo diario</h3>
+                    <p>Recorre la ciudad sin límites con nuestras bicicletas de alta calidad.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="seccion-texto">
+            <h2>Quiénes somos</h2>
+            <p>Más de 8 años promoviendo la movilidad sostenible. Somos un equipo apasionado por el ciclismo urbano, dedicados a entregar soluciones eficientes y rápidas para toda la comunidad ciclista.</p>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="seccion-contacto">
+            <h2>Agenda tu revisión</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required placeholder="tu@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Tipo de servicio</label>
+                    <input type="text" id="servicio" required placeholder="Ej: Mantención express">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BiciUrbana. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
